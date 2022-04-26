@@ -17,6 +17,8 @@ def traverse_2(root: Node) -> List[int]:
     def peek(st: List[int]) -> Optional[int]:
         return st[-1] if len(st) > 0 else None
 
+    if root is None:
+        return []
     ans = []
     stack = []
     while True:

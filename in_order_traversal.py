@@ -17,8 +17,8 @@ def traverse_2(root: Node) -> List[int]:
     ans = []
     stack = []
     current = root
-    while current or stack:
-        while current:
+    while current is not None or len(stack) > 0:
+        while current is not None:
             stack.append(current)
             current = current.left
         current = stack.pop()
