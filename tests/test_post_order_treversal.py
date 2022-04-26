@@ -6,3 +6,6 @@ def test_traverse():
     assert traverse(root_node) == [3, 4, 2, 6, 7, 5, 1]
     assert traverse_2(root_node) == [3, 4, 2, 6, 7, 5, 1]
 
+def test_traverse_empty():
+    assert traverse(None) == []
+    assert traverse_2(None) == []

@@ -14,6 +14,8 @@ def traverse(root: Node) -> List[int]:
 
 def traverse_2(root: Node) -> List[int]:
     # Iterative
+    if root is None:
+        return []
     ans = []
     stack = [root]
     while len(stack) > 0:
